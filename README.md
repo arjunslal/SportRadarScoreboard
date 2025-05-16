@@ -37,7 +37,22 @@ This project was written using TDD from the start. The test suite ensures:
   6.testTeamCannotBeInTwoMatches()
      
 ---
+## Project Structure
 
+```
+src/
+ └── main/
+     └── java/
+         └── com/sportradar/scoreboard/
+             ├── Match.java
+             └── Scoreboard.java
+ └── test/
+     └── java/
+         └── com/sportradar/scoreboard/
+             └── ScoreboardTest.java
+```
+
+---
 ## Design Highlights
 
 - **Single Responsibility**: Each class has a focused responsibility
