@@ -22,7 +22,6 @@ public class Match {
      */
     public Match(String homeTeam, String awayTeam) {
         this(homeTeam, awayTeam, LocalDateTime.now());
-
     }
 
     /**
@@ -39,12 +38,42 @@ public class Match {
         this.startTime = startTime;
     }
 
-    public String getHomeTeam() {
+    //Basic Getters
+    String getHomeTeam() {
         return homeTeam;
     }
 
-    public String getAwayTeam() {
+    String getAwayTeam() {
         return awayTeam;
     }
-    
+
+    int getHomeScore() {
+        return homeScore;
+    }
+
+    int getAwayScore() {
+        return awayScore;
+    }
+
+    int getTotalScore() {
+        return homeScore + awayScore;
+    }
+
+    LocalDateTime getStartTime() {
+        return startTime;
+    }
+
+    //Get the summary of a match
+    String getSummary() {
+        return homeTeam + " " + homeScore + " - " + awayTeam + " " + awayScore;
+    }
+
+    //Update the score of an ongoing match
+    void updateScore(int homeScore, int awayScore) {
+        if (homeScore < 0 || awayScore < 0) {
+            throw new IllegalArgumentException("Score values cannot be negative.");
+        }
+        this.homeScore = homeScore;
+        this.awayScore = awayScore;
+    }
 }
