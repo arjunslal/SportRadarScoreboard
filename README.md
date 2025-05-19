@@ -29,12 +29,12 @@ This project was written using TDD from the start. The test suite ensures:
   4. testSummaryOrdering()
  
 - Edge test cases:
-  1.testStartDuplicateMatchThrows()
-  2.testSameTeamNamesThrowsException()
-  3.testTiedScoresAreOrderedByRecentStartTime()
-  4.testUpdateNonExistentMatchThrows()
-  5.testFinishNonxistentMatchThrows()
-  6.testTeamCannotBeInTwoMatches()
+  1. testStartDuplicateMatchThrows()
+  2. testSameTeamNamesThrowsException()
+  3. testTiedScoresAreOrderedByRecentStartTime()
+  4. testUpdateNonExistentMatchThrows()
+  5. testFinishNonxistentMatchThrows()
+  6. testTeamCannotBeInTwoMatches()
      
 ---
 ## Project Structure
